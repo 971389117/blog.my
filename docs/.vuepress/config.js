@@ -1,47 +1,62 @@
 module.exports = {
     title: 'zxx\'s blog',
     description: 'Just playing around',
-    base: '/zxx-ui-least/',
+    base: '/blog.my/',
     markdown: {
         lineNumbers: true
     },
     themeConfig: {
         lastUpdated: 'Last Updated',
-        nav: [{
-                text: 'Home',
-                link: '/'
-            },
+       sidebar: [
             {
-                text: 'Guide',
-                link: '/guide/'
-            },
-            {
-                text: 'External',
-                link: 'https://google.com'
-            },
-            {
-                text: 'Languages',
-                items: [{
-                        text: '简体中文',
-                        link: '/language/chinese'
-                    },
-                    {
-                        text: 'Japanese',
-                        link: '/language/japanese'
-                    }
-                ]
-            }
-        ],
-        sidebar: [
-            './',
-            {
-                title: 'shell',
+                title: 'JS',
                 collapsable: false,
                 children: [
-                    '/shell/subShell',
+                    '/JS/module',
                 ]
             },
-        ]
+            {
+                title: 'GIT',
+                collapsable: false,
+                children: [
+                    '/git/git-base',
+                    '/git/git-internals',
+                ]
+            },
+            {
+                title: 'SHELL',
+                collapsable: false,
+                children: [
+                    '/shell/subshell',
+                ]
+            },
+        ],
+        nav: [{
+            text: 'Home',
+            link: '/'
+        },
+        {
+            text: 'Guide',
+            link: '/guide/'
+        },
+        {
+            text: 'External',
+            link: 'https://google.com'
+        },
+        {
+            text: 'Languages',
+            items: [{
+                    text: '简体中文',
+                    link: '/language/chinese'
+                },
+                {
+                    text: 'Japanese',
+                    link: '/language/japanese'
+                }
+            ]
+        }
+    ],
+
         // sidebar: [{
         //         title: '梦想',
         //         children: [
